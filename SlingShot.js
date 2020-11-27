@@ -1,4 +1,4 @@
-class Chain{
+class SlingShot{
     constructor(bodyA, pointB){
         var options = {
             bodyA: bodyA,
@@ -7,12 +7,12 @@ class Chain{
             length: 10
         }
         this.pointB = pointB
-        this.Chain= Constraint.create(options);
-        World.add(world, this.Chain);
+        this.SlingShot= Constraint.create(options);
+        World.add(world, this.SlingShot);
     }
 
       display(){
-            var pointA = this.Chain.bodyA.position;
+            var pointA = this.SlingShot.bodyA.position;
             var pointB = this.pointB;
             strokeWeight(4);
             line(pointA.x, pointA.y, pointB.x, pointB.y);
